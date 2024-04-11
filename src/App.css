@@ -1,0 +1,416 @@
+:root {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  height: 100dvh;
+  background-image: linear-gradient(
+    var(--darkBlue),
+    var(--darkBlue),
+    var(--brightBlue)
+  );
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  list-style: none;
+
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+
+  /*font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Young Serif", serif;*/
+
+  /*colors*/
+  --darkBlue: #1d2440;
+  --lighterBlue: #484e63;
+  --brightBlue: #3c359b;
+  --brighgreen: #35949b;
+  --white: #ffffff;
+  --containerBackground: #d9d9d963;
+}
+
+*,
+html,
+body,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+
+/*General*/
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.transparentContainer1 {
+  background-color: var(--containerBackground);
+
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  border-radius: 1rem;
+}
+
+.transparentContainer2 {
+  background-color: var(--containerBackground);
+  width: 23rem;
+  margin: 1.25rem;
+  padding: 0.5rem;
+
+  border-radius: 1rem;
+}
+
+.transparentContainer3 {
+  background-color: var(--containerBackground);
+
+  padding: 1rem;
+
+  border-radius: 1rem;
+}
+
+label {
+  text-align: left;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+button {
+  padding: 0.3rem 2rem 0.3rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border-style: none;
+}
+
+input {
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+
+  border-radius: 1rem;
+  border-style: none;
+
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--darkBlue) transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*NavBar*/
+.wrapperNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  position: sticky; /* Set the navbar to fixed position */
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  background-color: var(--darkBlue);
+}
+
+/*About*/
+
+.wrapperAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0.5rem;
+  text-align: center;
+  color: var(--white);
+  width: 20rem;
+}
+
+#profilePic {
+  height: 8rem;
+  border-radius: 5rem;
+}
+
+.wrapperAbout h1 {
+  margin-bottom: 0;
+}
+
+.wrapperAbout h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+}
+
+.wrapperAbout img {
+  height: 1.875rem;
+}
+
+.wrapperImgTitleAbout {
+  display: flex;
+}
+
+.IconsAbout {
+  width: 85%;
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapperAbout p {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--white);
+}
+
+/*Projects*/
+
+.wrapperProjects,
+.wrapperContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 1.1875rem;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.container p {
+  font-family: "Roboto Mono", monospace;
+  color: var(--brighgreen);
+}
+
+.cardProject {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 0 0.25rem 0.625rem 0.25rem;
+  color: var(--darkBlue);
+  max-width: 20rem;
+
+  border-radius: 1rem;
+  background-color: #e7e7e7be;
+}
+
+.cardProject:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardProject img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  filter: saturate(50%);
+}
+
+.projectIcons img {
+  width: 2rem;
+
+  margin-right: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.container h4,
+p {
+  margin-top: 0.1875rem;
+}
+
+/*Contact*/
+.wrapperForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  color: var(--darkBlue);
+}
+
+.wrapperForm button {
+  margin-top: 0.2rem;
+}
+
+#message {
+  padding: 2rem;
+
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 100%;
+
+  border-radius: 1rem;
+  border-style: none;
+}
+
+@media only screen and (max-width: 750px) {
+  #profilePic {
+    height: 10rem;
+  }
+
+  .mainContainer {
+    margin-top: 1rem;
+  }
+  .contactView700Contact {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .transparentContainer1 {
+    display: flex;
+    align-items: center;
+  }
+  .containerAboutContact {
+    display: flex;
+    height: 22rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .projectIcons img {
+    margin-top: 0.2rem;
+  }
+
+  .mainContainer {
+    margin-top: 1rem;
+  }
+  .container {
+    padding: 0.3rem;
+  }
+
+  .mainContainer {
+    height: 50rem;
+  }
+  .containerAboutContact {
+    display: flex;
+
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .contactView600Contact {
+    display: none;
+  }
+
+  /*container alternativo contact*/
+  .contactView700Contact {
+    margin: 1.2rem 0 1.2rem 0;
+    width: 50%;
+  }
+
+  .wrapperNavBar {
+    display: none;
+  }
+  .wrapperProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #h1Projects {
+    margin-left: 1.5rem;
+  }
+  .cardProject {
+    width: 35%;
+    margin: 0 0.3rem 0 0.3rem;
+  }
+
+  .transparentContainer1 {
+    background-color: var(--containerBackground);
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    margin: 1.2rem 1rem 1.2rem 0;
+
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transparentContainer1:hover,
+  .transparentContainer2:hover,
+  .transparentContainer3:hover {
+    box-shadow: 0 0 20px 5px var(--brightBlue);
+  }
+
+  .transparentContainer3 {
+    background-color: var(--containerBackground);
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+
+    width: 70%;
+  }
+
+  #message {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .mainContainer {
+    margin-top: 2rem;
+  }
+}
