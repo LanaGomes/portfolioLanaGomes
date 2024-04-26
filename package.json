@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "balloon-css": "^1.2.0",
     "firebase": "^10.8.0",
     "react": "^18.2.0",
