@@ -3,7 +3,7 @@ import gitHubPic from "../images/gitHubICon.png";
 import externalLinkIcon from "../images/externalLinkIcon.png";
 import instaIcon from "../images/InstaIcon.png";
 import linkedinIcon from "../images/linkedinIcon.png";
-import pdfCurriculum from "../images/histoquimico_pdf.pdf";
+import pdfCurriculum from "../images/curriculum.pdf";
 
 function About() {
   return (

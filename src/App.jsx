@@ -1,5 +1,5 @@
 import Contact from "./Components/Contact";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
