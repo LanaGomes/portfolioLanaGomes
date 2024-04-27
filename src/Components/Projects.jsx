@@ -27,7 +27,7 @@ function Projects() {
                 </a>
                 <a className="tooltip" target="blank">
                   {/*quando houver projeto, direcionar href href={pdfCurriculum}*/}
-                  <span className="tooltiptext">Ver produto final</span>
+                  <span className="tooltiptext">Ver projeto</span>
                   <img src={seeProjectLogo}></img>
                 </a>
               </div>
