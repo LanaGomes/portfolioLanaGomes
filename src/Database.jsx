@@ -20,7 +20,7 @@ export const projects = [
     id: 3,
     projectImg: capa,
     projectName: "Marka3",
-    technologiesUsed: "VS Code |  Sublime Text |  Atom | iTerm2  | Hyper",
+    technologiesUsed: "VS Code  Sublime Text  Atom iTerm2  Hyper",
     linkGithub: "https://github.com/LanaGomes",
   },
 ];
