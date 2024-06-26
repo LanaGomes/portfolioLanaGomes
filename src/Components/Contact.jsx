@@ -80,10 +80,10 @@ function Contact() {
           msg="Mensagem enviada :)  Entrarei em contato em breve"
         />
       )}
-      <h1>Contact</h1>
+      <h1>Contato</h1>
       <form onSubmit={handleSubmit} className="wrapperForm add">
         <label>
-          Name
+          Nome
           <input
             value={user.name}
             onChange={handleOnChange}
@@ -122,7 +122,7 @@ function Contact() {
             required
           ></textarea>
         </label>
-        <button>Enviar</button>
+        <button className="sentButton">Enviar</button>
       </form>
     </div>
   );
