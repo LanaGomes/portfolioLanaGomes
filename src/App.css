@@ -122,7 +122,6 @@ input {
 .tooltip {
   position: relative;
   display: inline-block;
-  /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -303,6 +302,10 @@ p {
 
   border-radius: 1rem;
   border-style: none;
+}
+
+.sentButton:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 750px) {
