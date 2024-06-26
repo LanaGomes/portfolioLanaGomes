@@ -17,17 +17,20 @@ function Projects() {
                 <p>{project.technologiesUsed}</p>
               </div>
               <div className="projectIcons ">
-                <a
-                  className="tooltip"
-                  target="blank"
-                  href="https://github.com/LanaGomes"
-                >
+                <a className="tooltip" target="blank" href={project.linkGithub}>
                   <span className="tooltiptext">código gitHub</span>
                   <img src={githubIconBlue}></img>
                 </a>
                 <a className="tooltip" target="blank">
                   <span className="tooltiptext">Ver projeto</span>
-                  <img src={seeProjectLogo}></img>
+                  <a
+                    className="tooltip"
+                    target="blank"
+                    href={project.linkProject}
+                  >
+                    {" "}
+                    <img src={seeProjectLogo}></img>
+                  </a>
                 </a>
               </div>
             </section>
