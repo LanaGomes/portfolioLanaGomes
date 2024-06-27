@@ -262,10 +262,21 @@ input {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
 
+.cardProject p {
+  padding: 0 10px;
+}
+
 .cardProject img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   filter: saturate(50%);
+}
+
+.cardProject h2 {
+  font-weight: 100;
+  text-align: center;
+  text-wrap: pretty;
+  margin: 5px 14px;
 }
 
 .projectIcons img {

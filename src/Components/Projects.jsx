@@ -13,6 +13,7 @@ function Projects() {
               <img src={project.projectImg} />
               <div className="container">
                 <h3>{project.projectName}</h3>
+                <h2>{project.projectdescription}</h2>
                 <h4>Tecnologias utilizadas</h4>
                 <p>{project.technologiesUsed}</p>
               </div>
