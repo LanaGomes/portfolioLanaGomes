@@ -1,5 +1,5 @@
 import capa from "./images/capa.png";
-import capaTimeSync from "./images/capaTimeSync.png";
+import capaTimeSync from "./images/capaTimesync.png";
 
 export const projects = [
   {
