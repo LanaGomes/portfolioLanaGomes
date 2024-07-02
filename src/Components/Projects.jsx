@@ -10,11 +10,11 @@ function Projects() {
         {projects.map((project) => {
           return (
             <section key={project.id} className="cardProject">
-              <img src={project.projectImg} />
-              <div className="container">
+              <img className="cardProjectImage" src={project.projectImg} />
+              <div className="cardProjectContent">
                 <h3>{project.projectName}</h3>
                 <h2>{project.projectdescription}</h2>
-                <h4>Tecnologias utilizadas</h4>
+
                 <p>{project.technologiesUsed}</p>
               </div>
               <div className="projectIcons ">
