@@ -234,17 +234,17 @@ input {
   text-align: center;
 }
 
-.container h3 {
+.cardProjectContent h3 {
   font-size: 1.1875rem;
 }
 
-.container {
+.cardProjectContent {
   padding: 0.5rem;
 }
 
-.container p {
+.cardProjectContent p {
   font-family: "Roboto Mono", monospace;
-  color: var(--brighgreen);
+  color: var(--brightBlue);
 }
 
 .cardProject {
@@ -252,7 +252,8 @@ input {
   transition: 0.3s;
   margin: 0 0.25rem 0.625rem 0.25rem;
   color: var(--darkBlue);
-  max-width: 20rem;
+
+  width: 100%;
 
   border-radius: 1rem;
   background-color: #e7e7e7be;
@@ -266,7 +267,7 @@ input {
   padding: 0 10px;
 }
 
-.cardProject img {
+.cardProjectImage {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   filter: saturate(50%);
@@ -286,7 +287,7 @@ input {
   margin-bottom: 0.2rem;
 }
 
-.container h4,
+.cardProjectContent h4,
 p {
   margin-top: 0.1875rem;
 }
@@ -319,17 +320,12 @@ p {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 750px) {
-  #profilePic {
-    height: 10rem;
-  }
+.transparentContainer3 {
+  background-color: var(--containerBackground);
+  padding-bottom: 1rem;
+  border-radius: 1rem;
 
-  .mainContainer {
-    margin-top: 1rem;
-  }
-  .contactView700Contact {
-    display: none;
-  }
+  width: 70%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -344,20 +340,56 @@ p {
 }
 
 @media only screen and (min-width: 750px) {
-  .projectIcons img {
-    margin-top: 0.2rem;
+  .transparentContainer3 {
+    background-color: var(--containerBackground);
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+
+    width: 70%;
+  }
+
+  .wrapperProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .cardProject {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 0.3rem 0 0.3rem;
+  }
+
+  .cardProjectImage {
+    border-radius: 5px 0 0 5px;
+    object-fit: cover;
+    width: 20%;
+  }
+
+  .cardProjectContent {
+    padding: 0.5rem;
+    margin: 10px;
+    text-align: left;
+  }
+
+  .cardProject h2 {
+    font-weight: 100;
+    text-align: left;
+    text-wrap: pretty;
+  }
+
+  .cardProject h3,
+  p {
+    margin-left: 1rem;
   }
 
   .mainContainer {
     margin-top: 1rem;
   }
-  .container {
-    padding: 0.3rem;
-  }
 
-  .mainContainer {
-    height: 50rem;
-  }
   .containerAboutContact {
     display: flex;
 
@@ -378,18 +410,16 @@ p {
   .wrapperNavBar {
     display: none;
   }
-  .wrapperProjects {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
 
   #h1Projects {
     margin-left: 1.5rem;
   }
-  .cardProject {
-    width: 35%;
-    margin: 0 0.3rem 0 0.3rem;
+
+  .projectIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 3rem;
   }
 
   .transparentContainer1 {
@@ -410,21 +440,20 @@ p {
     box-shadow: 0 0 20px 5px var(--brightBlue);
   }
 
-  .transparentContainer3 {
-    background-color: var(--containerBackground);
-    padding-bottom: 1rem;
-    border-radius: 1rem;
-
-    width: 70%;
-  }
-
   #message {
     padding: 1rem;
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (max-width: 749px) {
+  #profilePic {
+    height: 10rem;
+  }
+
   .mainContainer {
-    margin-top: 2rem;
+    margin-top: 1rem;
+  }
+  .contactView700Contact {
+    display: none;
   }
 }
