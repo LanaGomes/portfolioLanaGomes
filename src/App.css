@@ -45,6 +45,23 @@ body,
 
 /*General*/
 
+.containerFlagIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.flagIcon {
+  filter: grayscale(60%);
+  cursor: pointer;
+}
+
+.flagIcon:hover {
+  filter: grayscale(0%);
+  scale: 1.15;
+}
+
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -235,6 +252,7 @@ input {
 
 .cardProjectContent h3 {
   font-size: 1.1875rem;
+  width: 100%;
 }
 
 .cardProjectContent {
@@ -278,6 +296,7 @@ input {
   text-align: center;
   text-wrap: pretty;
   margin: 2px 14px;
+  width: 100%;
 }
 
 .projectIcons img {
@@ -290,6 +309,7 @@ input {
 .cardProjectContent h4,
 p {
   margin-top: 0.1875rem;
+  width: 100%;
 }
 
 /*Contact*/
@@ -376,7 +396,7 @@ p {
   }
 
   .mainContainer {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .containerAboutContact {
@@ -392,7 +412,7 @@ p {
 
   /*container alternativo contact*/
   .contactView700Contact {
-    margin: 1.2rem 0 1.2rem 0;
+    margin: 0.8rem 0 0.8rem 0;
     width: 50%;
   }
 
@@ -415,7 +435,7 @@ p {
     background-color: var(--containerBackground);
     padding-bottom: 1rem;
     border-radius: 1rem;
-    margin: 1.2rem 1rem 1.2rem 0;
+    margin: 0.8rem 1rem 0.8rem 0;
 
     width: 50%;
 
