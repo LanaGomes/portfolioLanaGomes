@@ -1,10 +1,5 @@
 import capa from "./images/capa.png";
 import capaTimeSync from "./images/capaTimesync.png";
-import { useTranslation } from "react-i18next";
-
-{
-  const { t } = useTranslation();
-}
 
 export const projects = [
   {
@@ -14,7 +9,8 @@ export const projects = [
     technologiesUsed: " |Javascript | React | |Tailwind | Vite ",
     linkGithub: "https://github.com/LanaGomes/timeSync",
     linkProject: "https://time-sync-sable.vercel.app/",
-    projectdescription: t("descricao"),
+    projectdescription:
+      "Aplicativo para gerenciar as horas de foco e de descanso afim de atingir um equilíbrio entre eles.",
   },
   {
     id: 2,
