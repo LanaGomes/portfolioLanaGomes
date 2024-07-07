@@ -16,7 +16,7 @@ export const projects = [
     id: 2,
     projectImg: capa,
     projectName: "Marka2",
-    technologiesUsed: "| VS Code | Sublime Text |  Atom | iTerm2 |  Hyper",
+    technologiesUsed: "|Javascript | React | |Tailwind | Vite ",
     linkGithub: "https://github.com/LanaGomes/portfolioLanaGomes",
     linkProject: "https://github.com/LanaGomes/portfolioLanaGomes",
     projectdescription:
@@ -27,7 +27,7 @@ export const projects = [
     id: 3,
     projectImg: capa,
     projectName: "Marka3",
-    technologiesUsed: "| VS Code |  Sublime Text |  Atom | iTerm2  | Hyper",
+    technologiesUsed: "|Javascript | React | |Tailwind | Vite ", //a partir de 5 palavras, texto quebra
     linkGithub: "https://github.com/LanaGomes/timeSync",
     linkProject: "https://github.com/LanaGomes/portfolioLanaGomes",
     projectdescription:
