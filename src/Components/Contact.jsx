@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 import { useState } from "react";
-
 import Message from "./Message";
+import { useTranslation } from "react-i18next";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APIKEY,
@@ -37,6 +37,7 @@ getDocs(colRef)
   });
 
 function Contact() {
+  const { t } = useTranslation();
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -74,16 +75,11 @@ function Contact() {
 
   return (
     <div id="contact" className="wrapperContact">
-      {ShowSuccessMessage && (
-        <Message
-          type="success"
-          msg="Mensagem enviada :)  Entrarei em contato em breve"
-        />
-      )}
-      <h1>Contato</h1>
+      {ShowSuccessMessage && <Message type="success" msg={t("success_msg")} />}
+      <h1>{t("contato")}</h1>
       <form onSubmit={handleSubmit} className="wrapperForm add">
         <label>
-          Nome
+          {t("nameLabel")}
           <input
             value={user.name}
             onChange={handleOnChange}
@@ -92,7 +88,7 @@ function Contact() {
             required
             minLength="3"
             maxLength="80"
-            placeholder="Insira seu nome aqui"
+            placeholder={t("insira_nome")}
           ></input>
         </label>
         <label>
@@ -105,11 +101,11 @@ function Contact() {
             minLength="10"
             maxLength="50"
             required
-            placeholder="Insira seu nome aqui"
+            placeholder={t("insira_email")}
           ></input>
         </label>
         <label>
-          Mensagem
+          {t("message")}
           <textarea
             value={user.message}
             onChange={handleOnChange}
@@ -118,11 +114,11 @@ function Contact() {
             type="text"
             minLength={10}
             maxLength={200}
-            placeholder="Insira sua mensagem aqui"
+            placeholder={t("insira_message")}
             required
           ></textarea>
         </label>
-        <button className="sentButton">Enviar</button>
+        <button className="sentButton">{t("enviar")}</button>
       </form>
     </div>
   );

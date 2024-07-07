@@ -1,11 +1,14 @@
 import githubIconBlue from "../images/githubLogoBlue.png";
 import seeProjectLogo from "../images/seeProjectLogo.png";
 import { projects } from "../Database";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <>
-      <h1 id="h1Projects">Projetos</h1>
+      <h1 id="h1Projects">{t("projetos")}</h1>
       <div className="wrapperProjects">
         {projects.map((project) => {
           return (
