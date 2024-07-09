@@ -2,7 +2,7 @@ import githubIconBlue from "../images/githubLogoBlue.png";
 import seeProjectLogo from "../images/seeProjectLogo.png";
 import { projects } from "../Database";
 import { useTranslation } from "react-i18next";
-
+import seta from "../images/triangulo.png";
 function Projects() {
   const { t } = useTranslation();
 
@@ -25,7 +25,7 @@ function Projects() {
                   <span className="tooltiptext">{t("código gitHub")}</span>
                   <img src={githubIconBlue}></img>
                 </a>
-                <a className="tooltip" target="blank">
+                <div className="tooltip" target="blank">
                   <span className="tooltiptext">{t("Ver projeto")}</span>
                   <a
                     className="tooltip"
@@ -33,9 +33,9 @@ function Projects() {
                     href={project.linkProject}
                   >
                     {" "}
-                    <img src={seeProjectLogo}></img>
+                    <img id="targetSection" src={seeProjectLogo}></img>
                   </a>
-                </a>
+                </div>
               </div>
             </section>
           );
