@@ -1,0 +1,17 @@
+{
+  "currículo": "Resume",
+  "desenvolvimento_Web": "Web Development",
+  "success_msg": "Message sent :) I will contact you soon.",
+  "contato": "Contact",
+  "nameLabel": "Name",
+  "insira_nome": "Insert your name",
+  "insira_email": "Insert your e-mail",
+  "insira_message": "Insert your message",
+  "enviar": "Send",
+  "message": "Message",
+  "projetos": "Projects",
+  "Aplicativo para gerenciar as horas de foco e de descanso afim de atingir um equilíbrio entre eles.": "Application to manage focus and rest hours to achieve a balance between them.",
+  "Projeto em andamento, por favor aguardar finalização do mesmo.Obrigada": "Project in progress, please wait for its completion. Thank you.",
+  "código gitHub": "GitHub code",
+  "Ver projeto": "View project"
+}
