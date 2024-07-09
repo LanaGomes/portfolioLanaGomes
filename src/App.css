@@ -353,7 +353,7 @@ p {
     background-color: var(--containerBackground);
     padding-bottom: 1rem;
     border-radius: 1rem;
-
+    margin-bottom: 1rem;
     width: 70%;
   }
 
