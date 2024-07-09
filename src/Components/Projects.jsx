@@ -15,18 +15,18 @@ function Projects() {
             <section key={project.id} className="cardProject">
               <img className="cardProjectImage" src={project.projectImg} />
               <div className="cardProjectContent">
-                <h3>{project.projectName}</h3>
-                <h2>{project.projectdescription}</h2>
+                <h3>{t(project.projectName)}</h3>
+                <h2>{t(project.projectdescription)}</h2>
 
                 <p>{project.technologiesUsed}</p>
               </div>
               <div className="projectIcons ">
                 <a className="tooltip" target="blank" href={project.linkGithub}>
-                  <span className="tooltiptext">código gitHub</span>
+                  <span className="tooltiptext">{t("código gitHub")}</span>
                   <img src={githubIconBlue}></img>
                 </a>
                 <a className="tooltip" target="blank">
-                  <span className="tooltiptext">Ver projeto</span>
+                  <span className="tooltiptext">{t("Ver projeto")}</span>
                   <a
                     className="tooltip"
                     target="blank"
