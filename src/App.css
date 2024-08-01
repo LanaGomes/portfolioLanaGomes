@@ -429,7 +429,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin-left: 3rem;
   }
 
   .transparentContainer1 {
@@ -490,9 +489,19 @@ p {
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) {
   .cardProject {
     height: 8rem;
+  }
+
+  .projectIcons {
+    margin-left: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .projectIcons {
+    margin-left: 11rem;
   }
 }
 

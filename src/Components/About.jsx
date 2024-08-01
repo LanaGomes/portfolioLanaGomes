@@ -1,13 +1,20 @@
 import profilePic from "../images/profilePic.jpeg";
 import gitHubPic from "../images/gitHubICon.png";
 import externalLinkIcon from "../images/externalLinkIcon.png";
+
 import instaIcon from "../images/InstaIcon.png";
 import linkedinIcon from "../images/linkedinIcon.png";
 import pdfCurriculum from "../images/curriculum.pdf";
+import pdfCurriculumEnglish from "../images/curriculum_english.pdf";
 import { useTranslation } from "react-i18next";
 
 function About() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  console.log(useTranslation());
+
+  const pdfCurriculumLink =
+    i18n.language === "en" ? pdfCurriculumEnglish : pdfCurriculum;
+
   return (
     <div className="wrapperAbout">
       <img id="profilePic" src={profilePic} />
@@ -41,7 +48,7 @@ function About() {
           <span className="tooltiptext">gitHub</span>
           <img alt="GitHub" src={gitHubPic}></img>
         </a>
-        <a className="tooltip" target="blank" href={pdfCurriculum}>
+        <a className="tooltip" target="blank" href={pdfCurriculumLink}>
           <span className="tooltiptext">{t("currículo")}</span>
           <img alt="CurriculumLink" src={externalLinkIcon}></img>
         </a>
