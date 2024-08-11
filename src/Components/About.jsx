@@ -4,7 +4,7 @@ import externalLinkIcon from "../images/externalLinkIcon.png";
 
 import instaIcon from "../images/InstaIcon.png";
 import linkedinIcon from "../images/linkedinIcon.png";
-import pdfCurriculum from "../images/curriculum.pdf";
+import pdfCurriculum from "../images/curriculoLanaPortugues.pdf";
 import pdfCurriculumEnglish from "../images/curriculum_english.pdf";
 import { useTranslation } from "react-i18next";
 
