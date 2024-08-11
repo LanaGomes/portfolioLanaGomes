@@ -14,6 +14,7 @@ function Projects() {
           return (
             <section key={project.id} className="cardProject">
               <img className="cardProjectImage" src={project.projectImg} />
+
               <div className="cardProjectContent">
                 <h3>{t(project.projectName)}</h3>
                 <h2>{t(project.projectdescription)}</h2>

@@ -274,10 +274,14 @@ input {
 
   border-radius: 1rem;
   background-color: #e7e7e7be;
+  transition: all 0.5s;
+  border: 0px solid transparent;
 }
 
 .cardProject:hover {
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  border-left: 8px solid var(--brightBlue);
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px var(--containerBackground);
 }
 
 .cardProject p {
@@ -501,7 +505,7 @@ p {
 
 @media only screen and (min-width: 1150px) {
   .projectIcons {
-    margin-left: 11rem;
+    margin-left: 9rem;
   }
 }
 
