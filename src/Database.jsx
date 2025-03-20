@@ -1,6 +1,6 @@
-import capa from "./images/capa.png";
+import marka from "./images/marka.jpg";
 import capaTimeSync from "./images/capaTimesync.png";
-import logoBuddy from "./images/squareLogo.png";
+import logoBuddy from "./images/logoBuddy.png";
 
 export const projects = [
   {
@@ -26,12 +26,12 @@ export const projects = [
 
   {
     id: 3,
-    projectImg: capa,
-    projectName: "Marka3",
+    projectImg: marka,
+    projectName: "Marka",
     technologiesUsed: "|Javascript | React | |Tailwind | Vite ", //a partir de 5 palavras, texto quebra
-    linkGithub: "https://github.com/LanaGomes/timeSync",
-    linkProject: "https://github.com/LanaGomes/portfolioLanaGomes",
+    linkGithub: "",
+    linkProject: "",
     projectdescription:
-      "Projeto em andamento, por favor aguardar finalização do mesmo.Obrigada",
+      "Agendamento fácil e rápido para microempreendedores oferecerem aos seus clientes.[ Projeto Pessoal | Em andamento ]",
   },
 ];
